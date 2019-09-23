@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Katwijk Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/katwijk-mono-regular-web.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Katwijk Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/katwijk-mono-bold-web.ttf") format("truetype");
+}
+
+body {
+  font-family: "Katwijk Regular";
+  background-color: #17292e;
+  color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+header.header {
+  padding: 30px 0;
+}
+
+header.header h1 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #4ee682;
+          text-decoration-color: #4ee682;
+}
+
+main.form {
+  margin-bottom: 30px;
+}
+
+main.form form {
+  background-color: #323d40;
+  padding: 25px 20px;
+  border-radius: 10px;
+}
+
+main.form form section.form__section:first-of-type > div:first-of-type {
+  margin-top: 0;
+}
+
+main.form form section.form__section:last-of-type > div:last-of-type {
+  margin-bottom: 0;
+}
+
+main.form form section.form__section .form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 25px 0;
+}
+
+main.form form section.form__section .form__field label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 5px;
+}
+
+main.form form section.form__section .form__field label span.required {
+  color: #4ee682;
+}
+
+main.form form section.form__section .form__field input,
+main.form form section.form__section .form__field select {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  width: 100%;
+  background-color: #e6faf0;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-box-shadow: 5px 5px #4ee682;
+          box-shadow: 5px 5px #4ee682;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main.form form section.form__section .form__field input:focus,
+main.form form section.form__section .form__field select:focus {
+  -webkit-box-shadow: 2px 2px #4ee682;
+          box-shadow: 2px 2px #4ee682;
+}
+
+main.form form section.form__section .form__field .file-wrapper {
+  position: relative;
+  background-color: #4ee682;
+  color: #17292e;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 5px 5px #17292e;
+          box-shadow: 5px 5px #17292e;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main.form form section.form__section .form__field .file-wrapper input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+main.form form section.form__section.form__section--submit {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+main.form form section.form__section.form__section--submit button {
+  background-color: #4ee682;
+  color: #17292e;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 5px 5px #17292e;
+          box-shadow: 5px 5px #17292e;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+/*# sourceMappingURL=screen.css.map */

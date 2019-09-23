@@ -1,0 +1,187 @@
+// Colours
+$green: #4ee682;
+$paleGreen: #e6faf0;
+$grey: #17292e;
+
+// Fonts
+@font-face {
+    font-family: 'Katwijk Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/katwijk-mono-regular-web.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Katwijk Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/katwijk-mono-bold-web.ttf') format('truetype');
+}
+
+
+
+$regular: 'Katwijk Regular';
+$bold: 'Katwijk Bold';
+
+html {
+    
+}
+
+body {
+    font-family: $regular;
+    background-color: $grey;
+    color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h2 {
+    
+}
+
+p {
+    
+}
+
+a {
+    
+}
+
+// HEADER
+header.header {
+    padding: 30px 0;
+    
+    h1 {
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: $green;
+    }
+}
+
+// FORM
+main.form {
+    margin-bottom: 30px;
+    
+    form {
+        background-color: #323d40;
+        padding: 25px 20px;
+        border-radius: 10px;
+        
+        section.form__section {
+            
+            &:first-of-type {
+                
+                & > div {
+                    
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
+            }
+            
+            &:last-of-type {
+                
+                & > div {
+                    
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            
+            .form__field {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 25px 0;
+                
+                label {
+                    flex: 1 1 auto;
+                    margin-bottom: 5px;
+                    
+                    span.required {
+                        color: $green;
+                    }
+                }
+                
+                input,
+                select {
+                    flex: 0 0 60%;
+                    width: 100%;
+                    background-color: $paleGreen;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 0;
+                    outline: none;
+                    box-shadow: 5px 5px $green;
+                    transition: all 0.2s ease;
+                    appearance: none;
+                    
+                    &:focus {
+                        box-shadow: 2px 2px $green;
+                    }
+                }
+                
+                input {
+                    
+                    &:focus {
+//                        outline: 2px solid $green;
+                    }
+                }
+                
+                select {
+                    
+                }
+                
+                .file-wrapper {
+                    position: relative;
+                    background-color: $green;
+                    color: $grey;
+                    padding: 10px 20px;
+                    border: none;
+                    outline: none;
+                    box-shadow: 5px 5px $grey;
+                    cursor: pointer;
+                    appearance: none;
+                    
+                    input {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            // Submit button
+            &.form__section--submit {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 5px;
+                
+                button {
+                    background-color: $green;
+                    color: $grey;
+                    padding: 10px 30px;
+                    border: none;
+                    outline: none;
+                    box-shadow: 5px 5px $grey;
+                    appearance: none;
+                }
+            }
+        }
+    }
+}
